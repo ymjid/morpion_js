@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Morpion Javascript</title>
+  <style>
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  .morpion-container {
+    border: 3px solid black;
+    width:600px;
+    height:600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .morpion-case {
+    border: 1px solid black;
+    width:33%;
+  }
+  #info {
+    border: 3px solid black;
+    width:600px;
+    height:600px;
+  }
+  </style>
+</head>
+<body>
+  <h1>Morpion en Javascript</h1>
+  <div id="morpion-score">
+    <font style="color:red;">0</font> - <font style="color:blue;">0</font>
+  </div>
+  <div class="game">
+    <div class="morpion-container" onclick="rebootgame()">
+      <div id="case_0" class="morpion-case" onclick="Playcase ('0')">
+      </div>
+      <div id="case_1" class="morpion-case" onclick="Playcase ('1')">
+      </div>
+      <div id="case_2" class="morpion-case" onclick="Playcase ('2')">
+      </div>
+      <div id="case_3" class="morpion-case" onclick="Playcase ('3')">
+      </div>
+      <div id="case_4" class="morpion-case" onclick="Playcase ('4')">
+      </div>
+      <div id="case_5" class="morpion-case" onclick="Playcase ('5')">
+      </div>
+      <div id="case_6" class="morpion-case" onclick="Playcase ('6')">
+      </div>
+      <div id="case_7" class="morpion-case" onclick="Playcase ('7')">
+      </div>
+      <div id="case_8" class="morpion-case" onclick="Playcase ('8')">
+      </div>
+    </div>
+    <div id="info">
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/script.js" ></script>
+</body>
+</html>
